@@ -28,6 +28,8 @@ converter = Text2png::Convert(formula)
 converter.png {|file| ...do something with 'file'...}
 
 converter.data #=> "data:image/png;base64, iVBOR...."
+
+converter.png.path #=> "/tmp/tex2png/..."
 ```
 
 ## Contributing
