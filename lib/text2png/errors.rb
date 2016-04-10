@@ -1,4 +1,4 @@
-module Tex2png
+module Text2png
   class Error < Exception
     def self.raise!(msg = nil, &cond)
       raise self.new(msg) if !cond || cond.call

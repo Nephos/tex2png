@@ -1,15 +1,15 @@
-require "tex2png/version"
-require "tex2png/errors"
-require "tex2png/result"
-require "tex2png/command"
-require "tex2png/converter"
+require "text2png/version"
+require "text2png/errors"
+require "text2png/result"
+require "text2png/command"
+require "text2png/converter"
 
-module Tex2png
+module Text2png
   LATEX_PACKAGES = [
     "amssymb", "amsmath", "color", "amsfonts"
   ].freeze
 
-  TEMP_DIR = "/tmp/tex2png"
+  TEMP_DIR = "/tmp/text2png"
 
   class << self
     def latex

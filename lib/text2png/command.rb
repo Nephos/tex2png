@@ -1,4 +1,4 @@
-module Tex2png
+module Text2png
   class Command
     attr_reader :path, :out, :name
 

@@ -1,4 +1,4 @@
-# Tex2png
+# Text2png
 
 A tex to png converter for ruby.
 
@@ -6,7 +6,7 @@ A tex to png converter for ruby.
 
 Add this line to your application's Gemfile:
 
-    gem "tex2png"
+    gem "text2png"
 
 And then execute:
 
@@ -14,27 +14,27 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install tex2png
+    $ gem install text2png
 
 ## Usage
 
 ```ruby
-require "tex2png"
+require "text2png"
 
 formula = "\\sum_{i = 0}^{i = n} \\frac{i}{2}"
 
-converter = Tex2png::Converter.new(formula)
+converter = Text2png::Converter.new(formula)
 
 converter.png {|file| ...do something with 'file'...}
 
 converter.data #=> "data:image/png;base64, iVBOR...."
 
-converter.png.path #=> "/tmp/tex2png/..."
+converter.png.path #=> "/tmp/text2png/..."
 ```
 
 ## Contributing
 
-1. Fork it ( https://github.com/mindpin/tex2png/fork )
+1. Fork it ( https://github.com/mindpin/text2png/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)

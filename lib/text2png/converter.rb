@@ -2,7 +2,7 @@ require "securerandom"
 require "base64"
 require "fileutils"
 
-module Tex2png
+module Text2png
   class Converter
     attr_reader :hash, :formula, :density, :name, :dir, :base
 
@@ -41,7 +41,7 @@ module Tex2png
 
         tex
         dvi
-        Tex2png::dvipng.run(*args).raise!
+        Text2png::dvipng.run(*args).raise!
         clean!
 
         path(:png)
@@ -65,7 +65,7 @@ module Tex2png
           "-output-directory=#{TEMP_DIR}", "-interaction=nonstopmode", tex
         ]
 
-        Tex2png::latex.run(*args).raise!
+        Text2png::latex.run(*args).raise!
 
         path(:dvi)
       end.call
