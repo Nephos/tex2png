@@ -1,4 +1,4 @@
-module Tex2png
+module Text2png
   class Result
     attr_reader :raw, :output, :cmd
 

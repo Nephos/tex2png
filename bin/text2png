@@ -1,14 +1,14 @@
 #!/usr/bin/env ruby
 #encoding: utf-8
 
-require 'tex2png'
+require 'text2png'
 require 'optparse'
 
-Version = Tex2png::VERSION
+Version = Text2png::VERSION
 
 begin
   opts = OptionParser.new do |opt|
-    opt.banner = "Usage: tex2png text [ --out file.png ]"
+    opt.banner = "Usage: text2png text [ --out file.png ]"
     opt.on("--out=file", "Specifie file to write the data. (default: stdout)") do |file|
       $file = File.open(file, 'w')
     end
@@ -18,7 +18,7 @@ begin
   end.parse!
   formula = opts.first
   raise "No text specified"  if formula.nil?
-  converter = Tex2png::Converter.new(formula)
+  converter = Text2png::Converter.new(formula)
   if $file
     converter.png {|file| $file << file.read}
   else

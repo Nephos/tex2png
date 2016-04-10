@@ -1,3 +1,3 @@
-module Tex2png
+module Text2png
   VERSION = "0.0.3"
 end
