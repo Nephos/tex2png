@@ -6,15 +6,21 @@ A tex to png converter for ruby.
 
 Add this line to your application's Gemfile:
 
-    gem "text2png"
+```sh
+  gem "text2png"
+```
 
 And then execute:
 
-    $ bundle
+```sh
+  bundle
+```
 
 Or install it yourself as:
 
-    $ gem install text2png
+```sh
+  gem install text2png
+```
 
 ## Usage
 
